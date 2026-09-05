@@ -1,16 +1,11 @@
-    zn "%SYS"
-
-    // Unexpire passwords and set up passwordless mode to simplify dev use.
-    do ##class(Security.Users).UnExpireUserPasswords("*")
-    zpm "install passwordless"
-
-    zn "USER"
-    // Create /_vscode web app to support intersystems-community.testingmanager VS Code extension
-    zpm "install vscode-per-namespace-settings"
-    zpm "install webterminal"
-
-    // this should be the place for individual application code.
-    zpm "install iknow-utils"
- 
-    halt
-
+zn "%SYS"
+;; Unexpire passwords and set up passwordless mode to simplify dev use.
+do ##class(Security.Users).UnExpireUserPasswords("*")
+zpm "install passwordless"
+pm "install iterm"
+zn "USER"
+:: Create /_vscode web app to support intersystems-community.testingmanager VS Code extension
+zpm "install vscode-per-namespace-settings"
+zpm "install iknow-utils"
+zpm "install md2json" 
+halt
