@@ -5,15 +5,15 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 ### Installation    
 Clone/git pull the repo into any local directory
 ```
-$ git clone https://github.com/r-cemper/isc-iknow-utils-Docker.git 
+git clone https://github.com/r-cemper/isc-iknow-utils-Docker.git 
 ```
 Open the terminal in this directory and run:
 ```
-$ docker-compose up -d
+docker-compose up -d   && docker-compose logs -f
 ```
 Test from docker console
 ```
-$ docker-compose exec iris iris session iris
+docker-compose exec iris iris session iris
 USER>
 ```
 or using **iterm**
