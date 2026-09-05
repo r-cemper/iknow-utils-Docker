@@ -1,6 +1,5 @@
 # Docker for iknow-utils
 Though long available the package iknow-utils never met Docker     
-It provides now also MDX2JSON with some demo data    
 ### Prerequisites   
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.    
 ### Installation    
