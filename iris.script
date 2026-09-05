@@ -4,7 +4,7 @@ do ##class(Security.Users).UnExpireUserPasswords("*")
 zpm "install passwordless"
 zpm "install iterm"
 zn "USER"
-:: Create /_vscode web app to support intersystems-community.testingmanager VS Code extension
+;; Create /_vscode web app to support intersystems-community.testingmanager VS Code extension
 zpm "install vscode-per-namespace-settings"
 zpm "install iknow-utils"
 halt
